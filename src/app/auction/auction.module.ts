@@ -15,7 +15,7 @@ import { AuctionRoutingModule } from './auction-routing.module';
   ],
   imports: [
     CommonModule,
-    AuctionRoutingModule
+    AuctionRoutingModule,
   ],
   exports: [
     AuctionsComponent

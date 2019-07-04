@@ -1,18 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuctionItem } from './auction-item';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuctionService {
-  constructor() { }
+  restUrl = 'http://localhost:3000/auctions';
 
-  getAll(): AuctionItem[] {
-    return [{
-      title: 'Dom22e22k',
-      description: 'jakiś tam op22is2',
-      imgUrl: 'https://picsum.photos/id/236/800/800',
-      price: 10
-    }];
+  constructor(private httpClient: HttpClient) { }
+
+  getAll(): Observable<AuctionItem[]> {
+    return this.httpClient.get<AuctionItem[]>(this.restUrl);
   }
 }

@@ -12,7 +12,11 @@ export class AuctionsComponent implements OnInit {
   constructor(private auctionService: AuctionService) { }
 
   ngOnInit() {
-    this.auctions = this.auctionService.getAll();
+    this.auctionService
+      .getAll()
+      .subscribe((auctions: AuctionItem[]) => {
+        this.auctions = auctions;
+      });
   }
 
 }
