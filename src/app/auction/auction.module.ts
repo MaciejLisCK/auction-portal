@@ -6,6 +6,7 @@ import { AuctionItemComponent } from './auctions/auction-item/auction-item.compo
 
 
 import { AuctionRoutingModule } from './auction-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AuctionRoutingModule } from './auction-routing.module';
   imports: [
     CommonModule,
     AuctionRoutingModule,
+    SharedModule
   ],
   exports: [
     AuctionsComponent

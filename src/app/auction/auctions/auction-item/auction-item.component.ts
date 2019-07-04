@@ -5,7 +5,7 @@ import { AuctionItem } from '../../auction-item';
   selector: 'ap-auction-item',
   template: `
   <div class="card">
-    <div class="card-header">{{auction.title}}</div>
+    <div class="card-header" apHighlight>{{auction.title}}</div>
     <img class="card-img" [src]="auction.imgUrl">
     <div class="card-body">
         <p class="card-text">
