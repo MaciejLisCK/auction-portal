@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuctionService} from '../auction.service';
 
 @Component({
   selector: 'ap-auctions',
@@ -6,15 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auctions.component.css']
 })
 export class AuctionsComponent implements OnInit {
-  auctions: AuctionsItemp[] = [{
-    title: 'Domek',
-    description: 'jakiś tam opis2',
-    imgUrl: 'https://picsum.photos/id/236/200/200',
-    price: 10
-  }];
-  constructor() { }
+  auctions: AuctionsItem[] = [];
+  constructor(private auctionService: AuctionService) { }
 
   ngOnInit() {
+    this.auctions = this.auctionService.getAll();
   }
 
 }
