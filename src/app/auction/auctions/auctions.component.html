@@ -1,6 +1,11 @@
 <h2>Lista naszych aukcji</h2>
 <section class="row">
-    <div *ngFor="let x of [1,2,3,4]" class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <ap-auction-item></ap-auction-item>
+    <div *ngFor="let auctionItem of [{
+        title: 'Domek',
+        description: 'jakiś tam opis',
+        imgUrl: 'https://picsum.photos/id/236/200/200',
+        price: 10
+      }]" class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <ap-auction-item [auction]="auctionItem"></ap-auction-item>
     </div>
 </section>
