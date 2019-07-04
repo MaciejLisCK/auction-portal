@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <section>
       <p> {{ today | date:'dd.MM.yyyy' }} </p>
       <p> {{ 'Hello World' | uppercase | lowercase }} </p>
+      <pre>{{ {hello: 'world', welcome: 'Here'} | json  }}</pre>
     </section>
   `,
   styles: []
