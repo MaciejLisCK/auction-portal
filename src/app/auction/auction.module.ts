@@ -5,6 +5,7 @@ import { PromotionsComponent } from './promotions/promotions.component';
 import { AuctionItemComponent } from './auctions/auction-item/auction-item.component';
 
 
+import { AuctionRoutingModule } from './auction-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AuctionItemComponent } from './auctions/auction-item/auction-item.compo
     AuctionItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuctionRoutingModule
   ],
   exports: [
     AuctionsComponent
