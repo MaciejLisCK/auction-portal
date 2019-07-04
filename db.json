@@ -1,0 +1,39 @@
+{
+    "auctions": [
+        {
+            "id": 1,
+            "title": "Coś",
+            "description": "asdasd tam op22is2",
+            "imgUrl": "https://picsum.photos/id/236/800/800",
+            "price": 1120
+        },
+        {
+            "id": 1,
+            "title": "Dom22e22k",
+            "description": "jakiś as dasd asd as op22is2",
+            "imgUrl": "https://picsum.photos/id/237/800/800",
+            "price": 5510
+        },
+        {
+            "id": 1,
+            "title": "Koza",
+            "description": "jakis adas dasd asd asdas2is2",
+            "imgUrl": "https://picsum.photos/id/238/800/800",
+            "price": 40
+        },
+        {
+            "id": 1,
+            "title": "Ptak",
+            "description": "jakias dasd asd asd sad ass2",
+            "imgUrl": "https://picsum.photos/id/231/800/800",
+            "price": 110
+        },
+        {
+            "id": 1,
+            "title": "No ja",
+            "description": "jasa das dasd as asd asd as op22is2",
+            "imgUrl": "https://picsum.photos/id/232/800/800",
+            "price": 1220
+        },
+    ]
+}
