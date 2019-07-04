@@ -3,11 +3,13 @@ import { Injectable } from '@angular/core';
 import { AuctionItem } from './auction-item';
 import { Observable } from 'rxjs';
 
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuctionService {
-  restUrl = 'http://localhost:3000/auctions';
+  restUrl = `${environment.restURL}/auctions`;
 
   constructor(private httpClient: HttpClient) { }
 
