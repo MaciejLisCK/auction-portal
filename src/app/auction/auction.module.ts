@@ -7,12 +7,14 @@ import { AuctionItemComponent } from './auctions/auction-item/auction-item.compo
 
 import { AuctionRoutingModule } from './auction-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { AuctionFilterPipe } from './auction-filter.pipe';
 
 @NgModule({
   declarations: [
     AuctionsComponent,
     PromotionsComponent,
-    AuctionItemComponent
+    AuctionItemComponent,
+    AuctionFilterPipe
   ],
   imports: [
     CommonModule,
