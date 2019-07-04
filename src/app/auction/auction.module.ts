@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuctionsComponent } from './auctions/auctions.component';
 import { PromotionsComponent } from './promotions/promotions.component';
-
-
+import { AuctionRoutingModule } from './auction-routing.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { PromotionsComponent } from './promotions/promotions.component';
     PromotionsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuctionRoutingModule
   ],
   exports: [
     AuctionsComponent
