@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AuctionService} from '../auction.service';
+import {AuctionItem} from './../auction-item';
 
 @Component({
   selector: 'ap-auctions',
@@ -7,7 +8,7 @@ import {AuctionService} from '../auction.service';
   styleUrls: ['./auctions.component.css']
 })
 export class AuctionsComponent implements OnInit {
-  auctions: AuctionsItem[] = [];
+  auctions: AuctionItem[] = [];
   constructor(private auctionService: AuctionService) { }
 
   ngOnInit() {
