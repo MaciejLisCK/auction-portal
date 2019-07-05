@@ -26,4 +26,25 @@ fdescribe('AuctionFilterPipe', () => {
       {title: 'Parmezan'}
     ]);
   });
+
+  it('should filter case insensitive', () => {
+    // GIVEN (arrange)
+    const pipe = new AuctionFilterPipe();
+    const auctions: AuctionItem[] = [
+      {title: 'Pomidor'} as AuctionItem,
+      {title: 'Ogórek'} as AuctionItem,
+      {title: 'Parmezan'} as AuctionItem,
+    ];
+    const filterWord = 'p'; // małe "p"
+
+    // WHEN (act)
+    const resultArray = pipe.transform(auctions, filterWord);
+
+    // THEN (assert)
+    expect(resultArray).toEqual([
+      {title: 'Pomidor'},
+      {title: 'Parmezan'}
+    ]);
+  });
+
 });
