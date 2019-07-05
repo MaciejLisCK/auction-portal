@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AuctionItem } from '../auction-item';
 
 @Component({
   selector: 'ap-add-auction',
@@ -19,6 +20,10 @@ export class AddAuctionComponent implements OnInit {
   }
 
   handleSubmit(myForm: NgForm) {
+    const imgUrl = `https://picsum.photos/id/${this.imgId}/600/600`;
+    const auction = {...myForm.value, imgUrl} as AuctionItem;
+
     console.log(myForm.value);
+    console.log(auction);
   }
 }
