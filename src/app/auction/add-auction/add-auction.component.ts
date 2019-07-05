@@ -12,4 +12,7 @@ export class AddAuctionComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleSubmit(myForm: any) {
+    console.log(myForm);
+  }
 }

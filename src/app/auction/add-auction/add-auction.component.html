@@ -1,1 +1,23 @@
-<p>add-auction works!</p>
+<h2>Dodaj nową aukcję</h2>
+<section class="row">
+    <div class="col-6">
+        <img class="img-thumbnail" src="https://picsum.photos/id/1/600/600">
+    </div>
+    <div class="col-6">
+        <form #addAuctionForm="ngForm" (ngSubmit)="handleSubmit(addAuctionForm)">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-edit"></i>
+                    </span>
+                </div>
+                <input type="text" ngModel name="title" class="form-control" placeholder="nazwa aukcji">
+            </div>
+                    
+
+            <button class="btn btn-primary" type="submit">
+                <i class="fa fa-gavel"></i> Dodaj aukcję
+            </button>
+        </form>
+    </div>
+</section>
