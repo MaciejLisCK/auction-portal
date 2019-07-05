@@ -1,7 +1,7 @@
 <h2>Dodaj nową aukcję</h2>
 <section class="row">
   <div class="col-6">
-    <img class="img-thumbnail" src="https://picsum.photos/id/1/600/600">
+    <img class="img-thumbnail" [src]="'https://picsum.photos/id/' + imgId + '/600/600'">
   </div>
   <div class="col-6">
     <form #addAuctionForm="ngForm" (ngSubmit)="handleSubmit(addAuctionForm)" >
@@ -34,7 +34,7 @@
             <i class="fa fa-image"></i>
           </span>
         </div>
-        <input type="number" ngModel name="imgUrl" class="form-control" required>
+        <input type="number" [(ngModel)]="imgId" name="imgUrl" class="form-control" required>
       </div>
 
       <div class="input-group mb-3">

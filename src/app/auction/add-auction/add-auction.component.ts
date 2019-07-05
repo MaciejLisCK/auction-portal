@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'ap-add-auction',
@@ -10,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class AddAuctionComponent implements OnInit {
+  imgId = 1;
 
   constructor() { }
 
@@ -17,6 +19,6 @@ export class AddAuctionComponent implements OnInit {
   }
 
   handleSubmit(myForm: NgForm) {
-    console.log(myForm);
+    console.log(myForm.value);
   }
 }
