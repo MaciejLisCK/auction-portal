@@ -1,14 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuctionsComponent } from './auctions.component';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
 
-describe('AuctionsComponent', () => {
+import { AuctionsComponent } from './auctions.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { AuctionFilterPipe } from '../auction-filter.pipe';
+
+fdescribe('AuctionsComponent', () => {
   let component: AuctionsComponent;
   let fixture: ComponentFixture<AuctionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuctionsComponent ]
+      declarations: [ AuctionsComponent, AuctionFilterPipe ],
+      imports: [
+        HttpClientTestingModule
+      ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
