@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AuctionFilterPipe } from './auction-filter.pipe';
 import { AddAuctionComponent } from './add-auction/add-auction.component';
 import { CartComponent } from './cart/cart.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,9 @@ import { CartComponent } from './cart/cart.component';
   ],
   exports: [
     AuctionsComponent
+  ],
+  providers: [
+    CartService
   ]
 })
 export class AuctionModule { }
