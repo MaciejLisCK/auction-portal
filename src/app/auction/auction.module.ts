@@ -28,9 +28,6 @@ import { CartService } from './cart.service';
   ],
   exports: [
     AuctionsComponent
-  ],
-  providers: [
-    CartService
   ]
 })
 export class AuctionModule { }
