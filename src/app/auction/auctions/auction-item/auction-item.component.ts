@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { AuctionItem } from '../../auction-item';
 
 @Component({
@@ -11,7 +11,7 @@ import { AuctionItem } from '../../auction-item';
         <p class="card-text">
             {{auction.description}}
         </p>
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" (click)="emitAddToCart()">
             <i class="fa fa-cart-plus"></i>
         </button>
     </div>
@@ -19,12 +19,11 @@ import { AuctionItem } from '../../auction-item';
   `,
   styles: []
 })
-export class AuctionItemComponent implements OnInit {
+export class AuctionItemComponent {
   @Input() auction: AuctionItem;
+  @Output() addToCart = new EventEmitter<AuctionItem>();
 
-  constructor() { }
-
-  ngOnInit() {
+  emitAddToCart() {
+    this.addToCart.emit(this.auction);
   }
-
 }

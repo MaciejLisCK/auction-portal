@@ -1,6 +1,6 @@
 <h2>Lista naszych aukcji</h2>
 <section class="row">
     <div *ngFor="let auctionItem of auctions | auctionFilter:'K'" class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <ap-auction-item [auction]="auctionItem"></ap-auction-item>
+        <ap-auction-item [auction]="auctionItem" (addToCart)="handleAddToCart($event)"></ap-auction-item>
     </div>
 </section>

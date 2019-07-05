@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuctionService} from '../auction.service';
 import {AuctionItem} from './../auction-item';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'ap-auctions',
@@ -9,7 +10,7 @@ import {AuctionItem} from './../auction-item';
 })
 export class AuctionsComponent implements OnInit {
   auctions: AuctionItem[] = [];
-  constructor(private auctionService: AuctionService) { }
+  constructor(private auctionService: AuctionService, private cartService: CartService) { }
 
   ngOnInit() {
     this.auctionService
@@ -19,4 +20,7 @@ export class AuctionsComponent implements OnInit {
       });
   }
 
+  handleAddToCart(auction: AuctionItem) {
+    this.cartService.addToCart(auction);
+  }
 }
