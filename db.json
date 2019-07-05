@@ -1,81 +1,95 @@
 {
-    "auctions": [
-        {
-            "id": 1,
-            "title": "Coś",
-            "description": "asdasd tam op2aaa2is2",
-            "imgUrl": "https://picsum.photos/id/236/800/800",
-            "price": 1120
-        },
-        {
-            "id": 2,
-            "title": "Koza",
-            "description": "jakiś as dasd asd as op22is2",
-            "imgUrl": "https://picsum.photos/id/237/800/800",
-            "price": 5510
-        },
-        {
-            "id": 3,
-            "title": "Kot",
-            "description": "jakis adas dasd asd asdas2is2",
-            "imgUrl": "https://picsum.photos/id/238/800/800",
-            "price": 40
-        },
-        {
-            "id": 4,
-            "title": "Ptak",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/231/800/800",
-            "price": 110
-        },
-        {
-            "id": 5,
-            "title": "Mops",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/232/800/800",
-            "price": 110
-        },
-        {
-            "id": 6,
-            "title": "Wyciek pamięci",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/2/800/800",
-            "price": 110
-        },
-        {
-            "id": 7,
-            "title": "Kazem",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/3/800/800",
-            "price": 110
-        },
-        {
-            "id": 8,
-            "title": "To co wy",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/4/800/800",
-            "price": 110
-        },
-        {
-            "id": 9,
-            "title": "Decyzja",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/5/800/800",
-            "price": 110
-        },
-        {
-            "id": 10,
-            "title": "Advice nowe",
-            "description": "jakias dasd asd asd sad ass2",
-            "imgUrl": "https://picsum.photos/id/6/800/800",
-            "price": 110
-        },
-        {
-            "id": 11,
-            "title": "No ja",
-            "description": "jasa das dasd as asd asd as op22is2",
-            "imgUrl": "https://picsum.photos/id/7/800/800",
-            "price": 1220
-        }
-    ]
+  "auctions": [
+    {
+      "id": 1,
+      "title": "Coś",
+      "description": "asdasd tam op2aaa2is2",
+      "imgUrl": "https://picsum.photos/id/236/800/800",
+      "price": 1120
+    },
+    {
+      "id": 2,
+      "title": "Koza",
+      "description": "jakiś as dasd asd as op22is2",
+      "imgUrl": "https://picsum.photos/id/237/800/800",
+      "price": 5510
+    },
+    {
+      "id": 3,
+      "title": "Kot",
+      "description": "jakis adas dasd asd asdas2is2",
+      "imgUrl": "https://picsum.photos/id/238/800/800",
+      "price": 40
+    },
+    {
+      "id": 4,
+      "title": "Ptak",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/231/800/800",
+      "price": 110
+    },
+    {
+      "id": 5,
+      "title": "Mops",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/232/800/800",
+      "price": 110
+    },
+    {
+      "id": 6,
+      "title": "Wyciek pamięci",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/2/800/800",
+      "price": 110
+    },
+    {
+      "id": 7,
+      "title": "Kazem",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/3/800/800",
+      "price": 110
+    },
+    {
+      "id": 8,
+      "title": "To co wy",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/4/800/800",
+      "price": 110
+    },
+    {
+      "id": 9,
+      "title": "Decyzja",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/5/800/800",
+      "price": 110
+    },
+    {
+      "id": 10,
+      "title": "Advice nowe",
+      "description": "jakias dasd asd asd sad ass2",
+      "imgUrl": "https://picsum.photos/id/6/800/800",
+      "price": 110
+    },
+    {
+      "id": 11,
+      "title": "No ja",
+      "description": "jasa das dasd as asd asd as op22is2",
+      "imgUrl": "https://picsum.photos/id/7/800/800",
+      "price": 1220
+    },
+    {
+      "title": "sasdasdad",
+      "price": 12,
+      "imgUrl": "https://picsum.photos/id/1/600/600",
+      "description": "asdaaaaaaaa",
+      "id": 12
+    },
+    {
+      "title": "Kooooo",
+      "price": 12,
+      "imgUrl": "https://picsum.photos/id/1/600/600",
+      "description": "asd",
+      "id": 13
+    }
+  ]
 }
