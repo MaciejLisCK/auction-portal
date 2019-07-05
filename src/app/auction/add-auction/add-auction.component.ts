@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'ap-add-auction',
   templateUrl: './add-auction.component.html',
-  styles: []
+  styles: [`
+    input.ng-dirty.ng-invalid {
+      border-color: red;
+    }
+  `]
 })
 export class AddAuctionComponent implements OnInit {
 
@@ -12,7 +16,7 @@ export class AddAuctionComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleSubmit(myForm: any) {
+  handleSubmit(myForm: NgForm) {
     console.log(myForm);
   }
 }

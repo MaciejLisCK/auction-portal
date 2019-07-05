@@ -1,27 +1,49 @@
 <h2>Dodaj nową aukcję</h2>
 <section class="row">
-    <div class="col-6">
-        <img class="img-thumbnail" src="https://picsum.photos/id/1/600/600">
-    </div>
-    <div class="col-6">
-        <form #addAuctionForm="ngForm" (ngSubmit)="handleSubmit(addAuctionForm)">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fa fa-edit"></i>
-                    </span>
-                </div>
-                <input type="text" #title="ngModel" ngModel  name="title" class="form-control" placeholder="nazwa aukcji" required>
+  <div class="col-6">
+    <img class="img-thumbnail" src="https://picsum.photos/id/1/600/600">
+  </div>
+  <div class="col-6">
+    <form #addAuctionForm="ngForm" (ngSubmit)="handleSubmit(addAuctionForm)" >
 
-            </div>
-            <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
-                <!-- {{title.errors | json }} -->
-                <div *ngIf="title.errors.required">To pole jest wymagane</div>
-            </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa fa-edit"></i>
+          </span>
+        </div>
+        <input type="text" #title="ngModel" ngModel name="title" class="form-control" placeholder="Nazwa aukcji" required>
+      </div>
+      <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+        <!-- {{title.errors | json }} -->
+        <div *ngIf="title.errors.required"> To pole jest wymagane !</div>
+      </div>
 
-            <button class="btn btn-primary" type="submit" [disabled]="addAuctionForm.invalid">
-                <i class="fa fa-gavel"></i> Dodaj aukcję
-            </button>
-        </form>
-    </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa fa-tag"></i>
+          </span>
+        </div>
+        <input type="number" ngModel name="price" class="form-control" placeholder="Cena aukcji" required>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa fa-image"></i>
+          </span>
+        </div>
+        <input type="number" ngModel name="imgUrl" class="form-control" required>
+      </div>
+
+      <div class="input-group mb-3">
+        <textarea rows="5" class="form-control"  name="description" placeholder="Opis aukcji"></textarea>
+      </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="addAuctionForm.invalid" >
+        <i class="fa fa-gavel"> </i> Dodaj aukcję
+      </button>
+    </form>
+  </div>
 </section>
