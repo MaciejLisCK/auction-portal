@@ -24,4 +24,21 @@ fdescribe('MainMenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should change isMenuShown to false after toggle', () => {
+    component.isMenuShown = true;
+
+    component.toggleMenu();
+
+    expect(component.isMenuShown).toBeFalsy();
+  });
+
+
+  it('should change isMenuShown to false after button click', () => {
+    component.isMenuShown = false;
+
+    fixture.debugElement.querySelector('button.navbar-toggler').click();
+
+    expect(component.isMenuShown).toBeFalsy();
+  });
 });
