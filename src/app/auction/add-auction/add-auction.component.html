@@ -11,9 +11,12 @@
                         <i class="fa fa-edit"></i>
                     </span>
                 </div>
-                <input type="text" ngModel name="title" class="form-control" placeholder="nazwa aukcji">
+                <input type="text" #title="ngModel" ngModel  name="title" class="form-control" placeholder="nazwa aukcji" required>
+
             </div>
-                    
+            <div class="alert alert-danger">
+                {{title.errors | json }}
+            </div>
 
             <button class="btn btn-primary" type="submit">
                 <i class="fa fa-gavel"></i> Dodaj aukcję
