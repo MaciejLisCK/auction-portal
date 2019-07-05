@@ -3,4 +3,5 @@
     <div *ngFor="let auctionItem of auctions | auctionFilter:'K'" class="col-12 col-sm-6 col-md-4 col-lg-3">
         <ap-auction-item [auction]="auctionItem" (addToCart)="handleAddToCart($event)"></ap-auction-item>
     </div>
+    <ap-cart-item-counter></ap-cart-item-counter>
 </section>

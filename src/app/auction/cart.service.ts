@@ -21,7 +21,7 @@ export class CartService {
     return this.item$;
   }
 
-  count(): Observable<number> {
+  countItems(): Observable<number> {
     return this.item$.pipe(map((arr) => arr.length));
   }
 }

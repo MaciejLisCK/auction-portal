@@ -11,6 +11,7 @@ import { AuctionFilterPipe } from './auction-filter.pipe';
 import { AddAuctionComponent } from './add-auction/add-auction.component';
 import { CartComponent } from './cart/cart.component';
 import { CartService } from './cart.service';
+import { CartItemCounterComponent } from './cart-item-counter/cart-item-counter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CartService } from './cart.service';
     AuctionItemComponent,
     AuctionFilterPipe,
     AddAuctionComponent,
-    CartComponent
+    CartComponent,
+    CartItemCounterComponent
   ],
   imports: [
     CommonModule,
